@@ -1,0 +1,10 @@
+{
+  "roots": [
+    "src/"
+  ],
+  "devRoots": [
+    "tests/"
+  ],
+  "devFailureHandler": null,
+  "parser": "ext-factparse"
+}

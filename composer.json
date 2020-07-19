@@ -1,0 +1,45 @@
+{
+  "name": "nazg/event-dispatcher",
+  "description": "Event Managiment for Hack",
+  "keywords": [
+    "hhvm",
+    "hack",
+    "event"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Yuuki Takezawa",
+      "email": "yuuki.takezawa@comnect.jp.net"
+    }
+  ],
+  "require": {
+    "hhvm": "^4.62",
+    "hhvm/hsl": "^4.0",
+    "hhvm/hsl-experimental": "^4.50",
+    "hhvm/hhvm-autoload": "^3.0"
+  },
+  "require-dev": {
+    "facebook/fbexpect": "^2.6.1",
+    "hhvm/hhast": "^4.0",
+    "hhvm/hacktest": "^2.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Nazg\\EventDispatcher\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "NazgTest\\": "tests/"
+    }
+  },
+  "scripts": {
+    "tests": [
+      "hhvm ./vendor/bin/hacktest.hack tests/"
+    ],
+    "register": [
+      "hhvm ./vendor/bin/hh-autoload.hack"
+    ]
+  }
+}
