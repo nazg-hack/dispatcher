@@ -1,6 +1,6 @@
 {
-  "name": "nazg/event-dispatcher",
-  "description": "Event Managiment for Hack",
+  "name": "nazg/dispatcher",
+  "description": "Dispatcher for Hack",
   "keywords": [
     "hhvm",
     "hack",
